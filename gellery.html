@@ -1,51 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>online Gallery</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Gallery page</h1>
-        <nav>
-             <a href="index.html">Home</a>&nbsp;&nbsp;
-            <a href="gellery.html">Gellery</a>&nbsp;&nbsp;
-            <a href="booking.html">Booking</a>&nbsp;&nbsp;
-            <a href="help.html">Help</a>&nbsp;&nbsp;
-            <a href="about.html">about</a>&nbsp;&nbsp;
-        </nav>
-    </header>
-    <main>
-        <h2>image</h2>
-        <img src="omg.jpg" alt="image 1">
-        <img src="ayy.jpg" alt="image 2">
-        <img src="eek.jpg" alt="image 3">
-        <h2>data table</h2>
-        <table>
-            <tr>
-            <th>name</th>
-            <th>category</th>
-            <th>price</th>
-            </tr>
+ <header class="header">
+    <h1 class="logo">Fashion Gallery</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="help.html">help</a></li>
         
-        <tbody>
-            <tr>
-                <td>phone</td>
-                <td>electronics</td>
-                <td>$199</td>
-            </tr>
-            <tr>
-                <td>shirt</td>
-                <td>clothing</td>
-                <td>$29</td>
-            </tr>
-        </tbody>
-        </table>
-    </main>
-    <footer>
-        <p>&copy;2025 my website .All rights reserved</p>
-    </footer>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="gallery">
+    <h2>Our Beautiful shoping</h2>
+    <div class="images">
+      <div class="item">
+        <img src="ayy.jpg" alt="dress" />
+        <p>froots</p>
+      </div>
+      <div class="item">
+        <img src="omg.jpg" alt="" />
+        <p>suppermarkeet</p>
+      </div>
+      <div class="item">
+        <img src="eek.jpg" alt="" />
+        <p>shoping Bags</p>
+      </div>
+    </div>
+
+    <!-- <h3>online-shopingtypes & price</h3> -->
+    <table>
+      <tr>
+        <th>#</th>
+        <th>shooping-Name</th>
+        <th>Price</th>
+        <th>Discount</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td> banana & orange</td>
+        <td>$5</td>
+        <td>$3%</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>chipces</td>
+        <td>$5</td>
+        <td>$4%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>shoping-bags</td>
+        <td>$60</td>
+        <td>$50%</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 online-supermarkeet. All rights reserved.</p>
+  </footer>
 </body>
 </html>

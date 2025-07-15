@@ -1,114 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <style>
-        body{
-            font-family: sans-serif;
-            background-color: gainsboro;
-            margin: 0;
-            padding: 0;
-        }
-        header,footer{
-            background-color: green;
-            color: white;
-            text-align: center;
-            padding: 15px;
-        }
-         img{
-            width: 200px;
-            margin: 10px;
-        }
-        table{
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th,td{
-            border: 1px solid #ddd;
-            padding: 10px;
-        }
-        th{
-            background-color: #eee;
-        }
-        form{
-            display: flex;
-            flex-direction: column;
-        }
-        nav a{
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        main{
-            padding: 20px;
-            background-color: white;
-            max-width: 800px;
-            margin: 20px auto;
-            box-shadow: 0 0 10px rgba(red, green, blue, alpha);
-        }
-    <style>
-        header{
-            background-color:green;
-            color: white;
-            text-align: start;
-            padding-top: 50px;
-            margin-bottom: 40px;
-            border: 100px;
-        }
-        nav a{
-            
-                color: white;
-                text-align: center;
-                text-decoration: none;
-            }
-            footer{
-                background-color: green;
-                color: white;
-                text-align: center;
-            }
-        
-    </style>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>booking</title>
-    <link rel="stylesheet" href="style.css">
+    </style> 
+  <meta charset="UTF-8">
+  <title>Booking Form</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Guest booking</h1>
-        <nav>
-              <a href="index.html">Home</a>&nbsp;&nbsp;
-            <a href="gellery.html">Gellery</a>&nbsp;&nbsp;
-            <a href="booking.html">Booking</a>&nbsp;&nbsp;
-            <a href="help.html">Help</a>&nbsp;&nbsp;
-            <a href="about.html">about</a>&nbsp;&nbsp;
+
+  <header class="header">
+    <h1 class="logo">  booking form</h1>
+    <nav class="nav">
+      <ul>
+        <a href="index.html">Home</a>&nbsp;
+        <a href="about.html">About</a>&nbsp;
+        <a href="booking.html">Booking</a>&nbsp;
+        <a href="gallery.html">gallery</a>&nbsp;
+        <a href="help.html">help</a>&nbsp;
         
-        </nav>
-    </header>
-    <form action=""></form>
-    <fieldset>
-    <p>guest information</p>
-    <h1>full name</h1>
-   <label for="firstname">firstname</label><br><br>
-   <input type="text" name="firstname" id="firstname"
-   placeholder="enter firstname"><br><br>
-   <h1>your major</h1>
-   <label for="computer science"></label><br><br>
-   <input type="text" name="computer science" id="lastname"
-   placeholder="enter computer science"><br><br>
-   <h1>select your gender</h1>
-   <label for="male">male</label><input type="radio" name="gender"></label><br><br>
-   <label for="female">female</label><input type="radio" name="gender"></label>
-   <h1>hobbies:</h1>
-   <label for="reading">reading</label><input type="checkbox"></label><br><br>
-   <label for="playing">playing</label><input type="checkbox"></label><br><br>
-   <label for="singing">singing</label><input type="checkbox"></label><br><br>
-   <LAbel for="comment">comment:</LAbel><br><br>
-   <textarea name="comment" rows="3" cols="12"
-   placeholder="shere your idea"></textarea><br><br>
-     </header>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <fieldset><legend>Guest information</legend>
+    
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+      <label for="major">Your Major:</label>
+      <select id="major">
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Software Engineering</option>
+        <option>Networking</option>
+      </select><br><br>
+
+       <label>Gender:</label>
+      <div class="gender"> 
+   <label for="male">male</label>
+        <input type="radio" name="gender" id="male"><br>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female"> 
+      </div><br>
+
+      <label >District</label>
+<select name="district" id="district">
+<option value="select" selected></option>
+<option value="hodan">hodan</option>
+<option value="kahda">kahda</option>
+<option value="dayniile">dayniile</option></select>
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments" rows="4" placeholder="Write your comments..."></textarea><br><br>
+
+      <input type="submit" value="Submit"><br><br>
+    </form>
+    </fieldset>
+  </div>
+<footer class="footer">
+    <p>&copy; 2025 online-supermarkeet. All rights reserved.</p>
+  </footer>
 </body>
- <footer>
-        <p>&copy;2025 my website .All rights reserved</p>
-    </footer>
 </html>
